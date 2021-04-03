@@ -3,11 +3,8 @@ import Grid from "@material-ui/core/Grid";
 import styles from "../../styles/Song.module.css";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 export default function Song({ song }) {
-  const router = useRouter();
-  const { id } = router.query;
   return (
     <Link href={`/${song.id}`}>
       <Grid
