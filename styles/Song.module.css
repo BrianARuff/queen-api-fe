@@ -1,0 +1,11 @@
+.song {
+  overflow-y: hidden;
+  padding: 0 20px;
+  background-color: #219ebc;
+  border: 1px solid #8ecae6;
+  color: #fefefe;
+}
+
+.lighterFont {
+  font-weight: lighter;
+}
