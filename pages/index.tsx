@@ -1,5 +1,5 @@
-import useSongs from "./customHooks/useSongs";
-import Song from "./components/Song";
+import useSongs from "../customHooks/useSongs";
+import Song from "../components/Song";
 import Grid from "@material-ui/core/Grid";
 import styles from "../styles/HomePage.module.css";
 

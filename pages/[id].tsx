@@ -13,11 +13,19 @@ export default function DynamicSongPage() {
   }, []);
   return (
     <>
-      <h2>Song Title: {song.title}</h2>
-      <p>Song Author: {song.author}</p>
-      <p>Song Album: {song.album}</p>
-      <h3 style={{ textDecoration: "underline" }}>Lyrics</h3>
-      <p>{song.lyrics}</p>
+      {error ? (
+        <p>Error loading song...</p>
+      ) : !song ? (
+        <p>Loading song...</p>
+      ) : (
+        <>
+          <h2>Song Title: {song.title}</h2>
+          <p>Song Author: {song.author}</p>
+          <p>Song Album: {song.album}</p>
+          <h3 style={{ textDecoration: "underline" }}>Lyrics</h3>
+          <p>{song.lyrics}</p>
+        </>
+      )}
     </>
   );
 }

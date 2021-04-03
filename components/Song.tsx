@@ -1,6 +1,6 @@
 import * as React from "react";
 import Grid from "@material-ui/core/Grid";
-import styles from "../../styles/Song.module.css";
+import styles from "../styles/Song.module.css";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
